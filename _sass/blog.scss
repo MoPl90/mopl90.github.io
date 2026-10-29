@@ -148,3 +148,62 @@
     font-weight: 300;
   }
 }
+
+// Typography for post bodies only (the theme's global styles are tuned for the CV page)
+.post-content {
+  p,
+  li {
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: 4rem 0 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: 3rem 0 1rem;
+  }
+
+  table {
+    table-layout: auto;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  th,
+  td {
+    padding: 0.6rem 0.8rem;
+    vertical-align: top;
+  }
+
+  thead th {
+    background: rgba(204, 204, 204, 0.12);
+    border-bottom: 1px solid #a6a6a6;
+  }
+
+  blockquote {
+    font-size: inherit;
+    border-left: 3px solid #CCCCCC;
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  code {
+    font-size: 90%;
+    padding: 1px 4px;
+    border-radius: 3px;
+  }
+}

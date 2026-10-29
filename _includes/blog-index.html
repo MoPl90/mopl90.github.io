@@ -1,0 +1,38 @@
+<div class="blog-index">
+  <h3>Blog</h3>
+
+  <p class="tag-list">
+    {%- for tag in site.data.tags -%}
+      <a class="tag" href="#tag-{{ tag.name | slugify }}">{{ tag.title }}</a>
+    {%- endfor -%}
+  </p>
+
+  <section>
+    <h4>All posts</h4>
+    {%- if site.posts.size > 0 -%}
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+          {%- include post-list-item.html post=post -%}
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      <p>No posts yet.</p>
+    {%- endif -%}
+  </section>
+
+  {%- for tag in site.data.tags -%}
+    {%- assign tagged = site.posts | where_exp: "post", "post.tags contains tag.name" -%}
+    <section id="tag-{{ tag.name | slugify }}">
+      <h4>{{ tag.title }}</h4>
+      {%- if tagged.size > 0 -%}
+        <ul class="post-list">
+          {%- for post in tagged -%}
+            {%- include post-list-item.html post=post -%}
+          {%- endfor -%}
+        </ul>
+      {%- else -%}
+        <p>No posts yet.</p>
+      {%- endif -%}
+    </section>
+  {%- endfor -%}
+</div>

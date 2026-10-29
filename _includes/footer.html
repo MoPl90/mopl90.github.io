@@ -1,9 +1,9 @@
 <div class="container footer-container">
   <p>
     {{ site.name | escape }} 
-    <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-    {%- if site.footer_show_references -%}
-      &nbsp;- {{ site.references_title | default: "References on request" }}
+    {%- if site.email -%}
+      <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
     {%- endif -%}
+    &nbsp;- © {{ site.time | date: '%Y' }}
   </p>
 </div>

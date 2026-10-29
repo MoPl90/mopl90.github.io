@@ -1,0 +1,129 @@
+.site-nav {
+  margin-top: 10px;
+
+  a {
+    color: inherit;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    a {
+      margin: 0 10px;
+    }
+  }
+}
+
+.blog-index {
+  h3 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: solid 2px #CCCCCC;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    margin-top: 3rem;
+    font-weight: 500;
+  }
+
+  .tag-list {
+    text-align: center;
+  }
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  time {
+    display: inline-block;
+    min-width: 110px;
+    font-weight: 300;
+  }
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 1px 8px;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.post {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  .post-title {
+    font-weight: 300;
+    font-size: 3.2rem;
+  }
+
+  .post-meta {
+    font-weight: 300;
+
+    time {
+      margin-right: 6px;
+    }
+  }
+
+  img,
+  .post-hero {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .post-warning {
+    padding: 10px;
+    border: 2px dashed #d9534f;
+  }
+}
+
+.measurements {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+
+  h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .measurements-scroll {
+    overflow-x: auto;
+  }
+
+  table {
+    font-size: 1.4rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 0.4rem;
+  }
+}
+
+.posts-container h3 {
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: solid 2px #CCCCCC;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}

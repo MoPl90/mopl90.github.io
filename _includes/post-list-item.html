@@ -1,0 +1,8 @@
+{%- comment -%} One post in a list: date, title, tags. Expects include.post. {%- endcomment -%}
+<li>
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%-d %b %Y" }}</time>
+  <a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a>
+  {%- for tag in include.post.tags -%}
+    <a class="tag" href="{{ '/blog/' | relative_url }}#tag-{{ tag | slugify }}">{{ tag }}</a>
+  {%- endfor -%}
+</li>

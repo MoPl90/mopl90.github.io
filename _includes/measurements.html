@@ -1,0 +1,37 @@
+{%- comment -%}
+Optional measurements box for posts. Front matter:
+  measurements:
+    columns: ["Amplitude (DU)", "Rate (s/d)", "Beat error (ms)"]
+    rows:
+      - label: Before
+        values: ["", "", ""]
+      - label: After
+        values: ["", "", ""]
+{%- endcomment -%}
+{%- if page.measurements -%}
+<aside class="measurements">
+  <h2>{{ page.measurements.title | default: "Measurements" }}</h2>
+  <div class="measurements-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {%- for column in page.measurements.columns -%}
+            <th scope="col">{{ column }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+      <tbody>
+        {%- for row in page.measurements.rows -%}
+          <tr>
+            <th scope="row">{{ row.label }}</th>
+            {%- for value in row.values -%}
+              <td>{{ value }}</td>
+            {%- endfor -%}
+          </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+</aside>
+{%- endif -%}

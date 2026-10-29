@@ -1,5 +1,5 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+repository: MoPl90/mopl90.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
@@ -7,7 +7,9 @@ version: 2
 
 # Personal info
 name: Moritz Platscher
-title: Machine Learning Engineer | Data Scientist | Physics PhD
+title: Machine Learning Engineer · Vision-Language Model training · Physics PhD
+description: Machine Learning Engineer at Kaiko.ai working on vision-language model training, with a PhD in physics.
+url: https://mopl90.github.io
 # email: Your email (optional)
 # email_title: Email (Email title override)
 # phone: Your phone number (optional)
@@ -19,7 +21,6 @@ title: Machine Learning Engineer | Data Scientist | Physics PhD
 darkmode: true
 
 # Social links
-twitter_username: MoPlatscher
 github_username: MoPl90
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
@@ -53,68 +54,59 @@ huggingface_username: moplat90
 about_title: About myself
 about_profile_image: images/me.jpeg
 about_content: | # this will include new lines to allow paragraphs
+  I'm a machine learning engineer based in Zurich, Switzerland, with roots in particle physics and cosmology.
 
+  I received my PhD from the University of Heidelberg and the Max Planck Institute for Nuclear Physics, where I worked on neutrino physics, modified gravity, and gravitational wave signals from phase transitions in the early Universe. I was interested in the traces new physics would leave in experimental data: how to extract them from the background, or in the absence of a signal, how to put limits on new particles and their interactions.
 
+  I then moved to Zurich to work at the Institute for Biomedical Engineering of the University and ETH Zurich, where I used image-to-image translation to synthetically augment training data for stroke lesion segmentation in MR and CT images. I also supervised Master's theses, co-supervised a PhD student, and reviewed for scientific journals. My time in academia was rewarding: I learned a lot and met many great people. But I wanted to work on real-world problems and see the impact of my work more directly.
 
+  This brought me to [Acodis](https://www.acodis.io), a startup in Winterthur, where I worked on document understanding and the full ML lifecycle, from proofs of concept for customer projects and model pre-training to production-ready ML models. I trained a fine-tunable table extraction model that became one of the top-selling product features.
 
+  More recently, I joined [Kaiko.ai](https://kaiko.ai), an Amsterdam- and Zurich-based startup in the healthcare space, where I lead the mid-training team. We do continual pre-training of large vision-language mixture-of-experts models on web-scale image and text data, including histopathology whole-slide images, radiology scans, and their associated reports. We also post-train our models for specific clinical tasks. I wrote a [blog post](https://kaiko.ai/insights-hub/Training-clinical-reasoning-model-at-scale) about our work on training a clinical reasoning model at scale, with more to come.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  I'm a Machine Learning (ML) and Software Engineer with roots in particle physics, currently based in Switzerland. 
-  Presently, I work as a ML Engineer in the Swiss AI startup Acodis, which is dedicated to transforming physical documents into structured and machine-readable data to enable the digital transformation of businesses.  
-  In 2021, Acodis was named as one of the [Forbes 30 most innovative AI startups in the DACH region](https://www.forbes.at/artikel/forbes-ki-30-dach-2021-die-liste.html).
-  Before I started working in industry, I had the wonderful opportunity to do research in elementary particle physics and cosmology and later in applied ML for medical imaging. 
-
-  I have always been attracted by the power of statistical methods, be it the application to phase transitions in physics, or applying complex ML models to vast amounts of data.
-  I am fascinated by both by the mathematical models of reality used in physics due to their interpretability, and the data-centric approach of ML leveraging vast amounts of real-world data.
-  Some of the topics I've worked on include (check out [Google scholar](https://scholar.google.com/citations?user=aG6ipTcAAAAJ&hl=en) for a complete list):
-    - Computer vision & generative ML for medical imaging
-    - Natural Language Processing for Document AI
-    - Modified gravity cosmology
-    - Gravitational wave physics
-    - Neutrino physics
-    - Automaton-based simulations for biophysics
+  Outside work, you'll usually find me rowing on Lake Zurich early in the morning, as a member of [Ruderclub Zürich](https://www.rcz.ch) and the [Zurich Penguins](https://www.zurichpenguins.ch). Rowing has inspired the [Row Pacer](https://row-pacer.app), an open-source app I built to track rowing metrics on the water. I've come to enjoy the peacefulness of the lake and the challenge of improving my technique. In a similar vein, but off the water, I also restore vintage mechanical watches, tinker with my espresso machine, and play electric and acoustic guitar. 
 
 content:
+  - title: Latest posts
+    layout: posts
+
+  - title: Research
+    layout: list
+    content:
+      - layout: left
+        title: Neutrino Physics
+        description: | # this will include new lines to allow paragraphs
+          Why neutrinos have mass is one of the open questions of particle physics. In my Master's thesis and during my PhD, I studied radiative neutrino mass models, in which neutrino masses arise from quantum corrections, and tested them with renormalization group methods and cosmological and astrophysical data.
+
+          - [Parity problem of the scotogenic neutrino model](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.92.095002), <i>Physical Review D</i> (2015)
+
+      - layout: left
+        title: Cosmology
+        description: | # this will include new lines to allow paragraphs
+          Dark matter and dark energy make up most of the Universe, but we don't know what they are. As a postdoc at the MPI for Nuclear Physics, I led a project testing alternative cosmologies and modified gravity theories on a novel combination of astrophysical data sets, using <mark>Monte Carlo</mark> methods, which gave new constraints on these scenarios. The code is open source (see <i>Cosmological Tests</i> under Projects).
+
+          - [Probing alternative cosmologies through the inverse distance ladder](https://iopscience.iop.org/article/10.1088/1475-7516/2020/10/040), <i>Journal of Cosmology and Astroparticle Physics</i> (2020)
+
+      - layout: left
+        title: Gravitational Waves
+        description: | # this will include new lines to allow paragraphs
+          The first detection of gravitational waves in 2015 opened an entirely new way to test physics beyond the Standard Model. I studied the gravitational-wave signal from first-order phase transitions in the early Universe. Because the fluid dynamics simulations involved are expensive, I trained a <mark>recommender system</mark> to suggest the most promising regions of parameter space to simulate. With my collaborators, I also showed that in theories with a massive graviton, gravitational waves can oscillate, much like neutrinos, which would leave unique signatures in the signal.
+
+          - [A fresh look at the gravitational-wave signal from cosmological phase transitions](https://link.springer.com/article/10.1007/JHEP03(2020)004), <i>Journal of High Energy Physics</i> (2020)
+          - [Gravitational Wave Oscillations in Bigravity](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.111101), <i>Physical Review Letters</i> (2017)
+
+      - layout: left
+        title: Medical Imaging
+        description: | # this will include new lines to allow paragraphs
+          At the Institute for Biomedical Engineering of the University and ETH Zurich, I used image-to-image translation to generate synthetic MR and CT images for training stroke lesion segmentation models, reaching state-of-the-art results with a fraction of the labeled training data.
+
+          - [Image translation for medical image generation: Ischemic stroke lesion segmentation](https://www.sciencedirect.com/science/article/pii/S1746809421008806), <i>Biomedical Signal Processing and Control</i> (2022)
+
+      - layout: left
+        title: Publications
+        description: | # this will include new lines to allow paragraphs
+          15 peer-reviewed articles; the complete list is on [Google Scholar](https://scholar.google.com/citations?user=aG6ipTcAAAAJ&hl=en).
+
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -137,44 +129,33 @@ content:
       #       Description about the work on/with the project
 
       - layout: top-middle
-        border:
-          none # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
-        title: Open-Source Speech-to-Speech Translation Agent [2023, ongoing]
-        link: https://github.com/MoPl90/Speech_Translator
-        link_text: AI speech translation agent
+        title: Row Pacer [2026]
+        link: https://row-pacer.app
+        link_text: row-pacer.app
         additional_links:
-          - title: A speech-to-speech translation agent
+          - title: Row Pacer on GitHub
             icon: fab fa-github
-            url: https://github.com/MoPl90/Speech_Translator
-        # quote: >
-        #   Short overview of the project (optional)
+            url: https://github.com/MoPl90/RowCoach.ai
+        quote: >
+          An open source rowing performance tracker – under development
         description: | # this will include new lines to allow paragraphs
-          I am building an open-source speech-based translation web application in order to enable direct translation of spoken language from audio to audio using open resources.
-          This project incorporates a <mark>REST-API</mark> model server hosting a variety of trainable and pre-trained models, as well as a user-friendly web front-end.
+          A web app that tracks rowing metrics in real time from the phone's motion sensor and GPS, built with <mark>React</mark> and <mark>Vite</mark> for use on the water.
 
       - layout: top-middle
-        border:
-          none # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
-        title: Dreambooth [2022]
-        link: https://huggingface.co/spaces/moplat90/dreambooth-training
-        link_text: Dreambooth (private)
-        # quote: >
-        #   Short overview of the project (optional)
+        title: Homelab [2023 – now]
         description: | # this will include new lines to allow paragraphs
-          I fine-tuned a Stable Diffusion v2 model to generate images of myself from text prompts (see intro image). 
-          I used this project to familiarize myself with diffusion models and using the <mark>Hugging Face</mark> ecosystem for hosted training and inference.
+          My Raspberry Pi runs a <mark>Docker</mark> stack of useful self-hosted services, like document storage and network backups, as well as [Hermes Agent](https://hermes-agent.nousresearch.com), the AI agent by Nous Research, running open-weight models via [OpenRouter](https://openrouter.ai).
 
       - layout: top-middle
-        border:
-          none # Value of `weak` will display a weak border below this item. # Any
-          # other value (or no value) means no border will be displayed
-        title: Swiss Immo  Index [2021, discontinued]
+        title: Watches [2026]
         description: | # this will include new lines to allow paragraphs
-          In a team of two, we built a web-based tool, providing an overview of housing prices and rents in Switzerland. 
-          Moreover, we used ML to predict prices and rents in areas with no or little data to provide high-resolution estimates for the Swiss housing market.
-          We collected and curated current and historical data by means of automatic <mark>web scraping</mark>.
+          I repair and restore vintage Japanese mechanical watches. Learning about the engineering history of watches and the mechanics behind them has been a fascinating journey. Tracking down spare parts, polishing the crystal, and putting it all together into a functional timepiece is a strangely satisfying and meditative process. I want to write up what I learn along the way. It's a fun hobby that combines engineering, history, and craftsmanship.
+
+      - layout: top-middle
+        title: Coffee [2026]
+        description: | # this will include new lines to allow paragraphs
+          I'm an absolute coffee addict. And as an engineer, I cannot resist tinkering with my espresso machine. Learn more about my coffee adventures and experiments:
+          [Coffee posts](/blog/#tag-coffee)
 
       - layout: top-middle
         border:
@@ -198,171 +179,29 @@ content:
             icon: fab fa-github
             url: https://github.com/MoPl90/cosmological_tests
         description: | # this will include new lines to allow paragraphs
-          Open source code of our publication on [probing alternative cosmologies through the inverse distance ladder](https://iopscience.iop.org/article/10.1088/1475-7516/2020/10/040) via <mark>Monte Carlo</mark> methods.
-
-  - title: Experience
-    layout: list
-    content:
-      - layout: left
-        title: Senior ML Engineer
-        sub_title: Acodis AG, Winterthur, Switzerland
-        caption: 2021 - now
-        link: www.acodis.io
-        quote: >
-          Acodis is a Swiss software company that provides a SaaS platform to help companies extract structured data from documents to enable automation and digitalization of business processes.
-        description: | # this will include new lines to allow paragraphs
-          I am part of the ML team at Acodis, responsible for research and development of new ML models that enhance existing, or enable new features of our products. 
-          In this role I handle the entire ML lifecycle, implementing PoCs, handling data pre-/post-processing, as well as pre-training and fine-tuning models and the deployment of models into production. 
-          Some functionalities I have enabled include detection and segmentation of tables, segmentation of document layout, key-value pair extraction, and generally enhanced document understanding by leveraging 
-          data augmentation and optimization techniques, such as model quantization and parameter efficient fine-tuning of transformers <mark>PEFT</mark>.
-          I have built and maintained a model server API, which serves as an interface between our document platform and GPU-backed servers, since we deploy models fully trainable by the user.
-          Moreover, I am curating internal datasets for benchmarking and pre-training models on real-world data.
-
-          As in my previous roles, I have the pleasure to supervise Master students, who write their thesis in our team and in collaboration with a Swiss University. So far, I have supervised four theses:
-          - Document Clustering via multi-modal deep learning (2022/23, collaboration with EPFL, Lausanne)
-          - A Visual-Interactive Tool for Information Extraction from Documents through Clustering and Data Labeling (2022, collaboration with the University of Zurich)
-          - Table Detection and Structure Recognition (2021/22, collaboration with the University of Zurich)
-
-          In my daily work I am mostly using the following tech stack: <mark>Python</mark> <mark>Pytorch</mark> <mark>FastAPI</mark> <mark>celery</mark> <mark>ClearML</mark> <mark>docker</mark> <mark>git</mark> <mark>PostgreSQL</mark> <mark>Apache Arrow</mark> <mark>Azure DevOps</mark> <mark>Google Cloud Platform</mark>
-
-      - layout: left
-        title: Postdoctoral Researcher
-        sub_title: Institute for Biomedical Engineering, ETH and University of Zurich,  Switzerland
-        caption: 2019 - 2021
-        link: www.biomed.ee.ethz.ch
-        # quote: >
-        #   # The Institute for Biomedical Engineering (IBT) is a joint institution of the ETH Zurich and the University of Zurich.
-        description: | # this will include new lines to allow paragraphs
-          As a researcher at the IBT, I was responsible for researching novel algorithmic approaches to brain lesion diagnostics.
-          My focus was on generative ML in order to leverage the scarcely available (labeled) training data for lesion segmentation. 
-          In [this published work](https://www.sciencedirect.com/science/article/pii/S1746809421008806) we show that by using image-to-image translation, one can achieve SOTA results in lesion segmentation with a fraction of the training data. 
-
-          Apart from generative ML, I worked with various computer vision techniques and implemented various models operating on 3D imaging data, such as a 3D UNet. I also supervised a number of bachelor and master students in my time at IBT.
-
-          In this role, I mostly used: <mark>Python</mark> <mark>C++</mark> <mark>tensorflow</mark> <mark>docker</mark> <mark>git</mark> <mark>LaTeX</mark>
-
-      - layout: left
-        title: Postdoctoral Researcher
-        sub_title: MPI for Nuclear Physics, Heidelberg, Germany
-        caption: 2019
-        link: www.mpi-hd.mpg.de
-        # quote: >
-
-        description: | # this will include new lines to allow paragraphs
-          During my postdoctoral stay at MPIK, I lead and coordinated a project investigating the cosmological implications of modified gravity theories. 
-          In this project, we used <mark>Python</mark> implementations of <mark> Monte Carlo</mark> methods to study the effects of modified gravity models on cosmological observables using a novel combination of astrophysical datasets.
-          Thereby, we were able to derive [new constraints on such scenarios.](https://iopscience.iop.org/article/10.1088/1475-7516/2020/10/040)
-
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: PhD in Physics
-        sub_title: MPI for Nuclear Physics & University of Heidelberg, Germany
-        caption: 2015 - 2019
-        # quote: >
-        #   Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          During my PhD I worked on projects ranging from particle physics to cosmology trying to shed light on the identity and origin of Dark Matter and Dark Energy. 
-          I worked on radiative neutrino mass models, where cosmology and astrophysical data prove to be a excellent way to test these models.
-          Moreover, the [first detection of gravitational waves in 2015](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.061102) by the LIGO/VIRGO collaboration opened an entirely new data modality for testing models by means of gravitational wave astronomy. 
-          As a first application, I began to investigate the use of gravitational wave signals to constrain particle physics models via signatures in phase transitions in the early Universe. 
-          In the [following publication](https://link.springer.com/article/10.1007/JHEP03(2020)004) we investigated the signal strength of first order phase transitions in the early universe, which involves a computationally expensive fluid dynamics simulation. 
-          In order to minimize the computational cost, I trained a <mark>recommender system</mark> to suggest regions of high signal strength which we would then simulate and re-use to refine the recommender. 
-          Thereby, we were able to provide a systematic analysis of the parameter space, which would have been infeasible otherwise.
-
-          Finally, I investigated the possibility of gravitational waves behaving similar to neutrinos, in the (hypothetical) setting where gravitons have a mass (or gravitational waves don't travel at the speed of light). 
-          Together with my collaborators, I showed that this would lead to [unique signatures in the gravitational wave signal](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.111101), a result which was published in <i>Physical Review Letters</i> and presents the first thorough discussion of this phenomenon.
-
-          As it is customary in high-energy physics, I worked with <mark>Wolfram Mathematica</mark> for all symbolic calculations, and <mark>Python</mark> for all numerical analyses. For numerical simulations, I had access to a <mark>SLURM cluster</mark>.
-      - layout: left
-        title: Master of Science in Physics
-        sub_title: Ludwig-Maximilians Universität, Munich, Germany
-        caption: 2013 - 2015
-        # quote: >
-        #   Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          In my Master classes I focussed on particle physics and cosmology as applications of statistical physics.
-          In my thesis I studied radiative neutrino mass models, where the neutrino mass is generated by quantum mechanical effects, 
-          and showed that some of these models have a built-in [hierarchy problem](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.92.095002), which severely limits their viable parameter space.
-
-          Some of courses I took include:
-          - General Relativity
-          - Quantum Field Theory I+II (QED and QCD)
-          - Cosmology
-          - Statistical Physics II
-          - Effective Quantum Field Theory
-
-      - layout: left
-        title: Bachelor of Science in Physics
-        sub_title: Ludwig-Maximilians Universität, Munich, Germany
-        caption: 2010 - 2013
-        # quote: >
-        #   Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          During my Bachelor studies I developed my interested in statistical physics, and in particular in phase transitions and renormalization group methods.
-          I wrote my Bachelor's thesis on agent-based models of soft biological tissue, investigating if network formation of individual agents can be simulated by simple automaton rules, which I implemented in <mark>C++</mark>.
-
-          Some courses I took are:
-          - Programming in <mark>Java</mark>
-          - Numerical methods in <mark>C++</mark>
-          - Statistical physics
-          - Non-linear dynamics
-
-  - title: Apart from that...
-    layout: list
-    content:
-      - layout: left
-        title: Sports
-        description: | # this will include new lines to allow paragraphs
-          In my spare time I enjoy being outdoors, either for a casual run, a weekend hike, or a full-fledged outdoor adventure. 
-          Currently, you will find me rowing on Lake Zurich 2-3 times a week early in the morning (see picture below for some inspiration). 
-          I am an active member of [Ruderclub Zürich](https://www.rcz.ch) and the [Zurich Penguins](https://www.zurichpenguins.ch).
-
-      - layout: left
-        title: Music
-        description: | # this will include new lines to allow paragraphs
-          On the more creative side I play the guitar (electric and classical). Currently, I am in a classical phase working on the following pieces:
-          - Chôro da Saudade (Agustin Barrios Mangore)
-          - Manha do Carnaval / La Chanson d'Orphee (Luiz Bonfá; arranged by Ulli Bögershausen)
-          - Sueño (Francisco Tárrega)
-
-      - layout: left
-        title: Languages
-        description: | # this will include new lines to allow paragraphs
-          I am passionate about learning languages. So far, I've acquired conversational skills in
-          - <mark>Spanish</mark> (which I refined during a 6 month stay in Argentina in 2010)
-          - <mark>Portuguese</mark> (which interested me due to its heavy influence on Argentinian Spanish)
-          - <mark>Japanese</mark> (currently working on Kanji <mark>JLPT N3</mark>)
-
-          Obviously, I enjoy putting these language skills to practice while traveling. 
-          I have found that by interacting and conversing with people, the travel experience is lifted to a very different level.
-          I also enjoy creating and consuming dishes from all around the world.
-
-      - layout: left
-        title: Politics & Current Events
-        description: | # this will include new lines to allow paragraphs
-          Moreover, I am deputy speaker of the [SPD Zurich](https://www.spd-zuerich.ch), a group of politically active German citizens living in Switzerland. 
-          We organize regular meet-ups for discussing current events and other relevant topics. In addition, we try to provide information for German citizens in Switzerland in regards to political participation.
+          Open source code of our publication on probing alternative cosmologies through the inverse distance ladder via <mark>Monte Carlo</mark> methods.
 
       - layout: top-middle
         description: | # this will include new lines to allow paragraphs
-          ![img](/images/rowing.jpeg "Rowing")
-
-# Footer
-footer_show_references: true
-references_title: © 2023
+          ![A rowing boat on Lake Zurich](/images/rowing.jpeg "Rowing on Lake Zurich")
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
   style: compressed
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:title/
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 exclude:
   [
@@ -375,5 +214,7 @@ exclude:
     "vendor/ruby/",
     "lib/",
     "scripts/",
-    "docker-compose.yml",
+    "REVIEW.md",
+    "README.md",
+    "modern-resume-theme.gemspec",
   ]

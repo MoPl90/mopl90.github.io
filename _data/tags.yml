@@ -1,0 +1,10 @@
+# Blog tags shown on the blog index. A post's `tags:` should use these names.
+- name: watches
+  title: Watches
+- name: coffee
+  title: Coffee
+- name: ml
+  title: ML
+- name: bread
+  title: Bread
+

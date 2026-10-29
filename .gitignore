@@ -7,3 +7,6 @@ vendor
 .DS_Store
 .vscode
 
+
+# Drafts stay local until published to _posts/
+_drafts/*.md

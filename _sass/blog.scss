@@ -207,3 +207,47 @@
     border-radius: 3px;
   }
 }
+
+// Footnotes (kramdown): set apart from the text above, smaller and muted
+.post-content {
+  a.footnote {
+    text-decoration: none;
+    padding: 0 2px;
+  }
+
+  .footnotes {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(204, 204, 204, 0.4);
+    font-size: 1.3rem;
+    opacity: 0.85;
+
+    ol {
+      padding-left: 2rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  a.reversefootnote {
+    text-decoration: none;
+  }
+}
+
+// Single images with a caption: <figure><img …><figcaption>…</figcaption></figure>
+.post-content figure {
+  margin: 20px 0;
+
+  img {
+    margin: 0;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 6px;
+  }
+}

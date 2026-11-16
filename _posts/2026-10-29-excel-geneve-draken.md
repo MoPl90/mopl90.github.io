@@ -27,11 +27,11 @@ According to the [Ranfft watch database](https://ranfft.org/manufacturer/77-Ebau
 
 <div class="photo-pair">
   <figure>
-    <img src="/assets/img/posts/excel-geneve-draken/dial_side-no-date-wheel.jpeg" alt="Dial side of the movement in a holder, with the date wheel removed">
+    <img src="/assets/img/posts/excel-geneve-draken/dial_side-no-date-wheel-sq.jpeg" alt="Dial side of the movement in a holder, with the date wheel removed">
     <figcaption>Dial side, date wheel removed</figcaption>
   </figure>
   <figure>
-    <img src="/assets/img/posts/excel-geneve-draken/eb_8021n.jpeg" alt="Close-up of the main plate showing the Ebauches Bettlach logo and the 8021N stamp">
+    <img src="/assets/img/posts/excel-geneve-draken/eb_8021n-sq.jpeg" alt="Close-up of the main plate showing the Ebauches Bettlach logo and the 8021N stamp">
     <figcaption>The EB 8021N stamp on the main plate</figcaption>
   </figure>
 </div>
@@ -44,7 +44,7 @@ Well, since not much was to be repaired after all, I prepared the cleaning solut
 
 <div class="photo-pair">
   <figure>
-    <img src="/assets/img/posts/excel-geneve-draken/barrel.jpeg" alt="The movement side in a holder before cleaning, with old oil smeared over the barrel and gear train">
+    <img src="/assets/img/posts/excel-geneve-draken/barrel-sq.jpeg" alt="The movement side in a holder before cleaning, with old oil smeared over the barrel and gear train">
     <figcaption>The movement side before cleaning, with excess oil clearly visible on the barrel</figcaption>
   </figure>
   <figure>

@@ -38,14 +38,20 @@ According to the [Ranfft watch database](https://ranfft.org/manufacturer/77-Ebau
 
 I think a combination of 1 and 2 was the reason the watch wasn't running. It came back to life after soaking up some of the excess Brent-grade lubricant and putting the spring where it belonged. I regret not having done a more systematic analysis here, but a runner is a runner! Boy was I proud, but not for long.
 
-<figure>
-  <img src="/assets/img/posts/excel-geneve-draken/barrel.jpeg" alt="The movement side in a holder before cleaning, with old oil smeared over the barrel and gear train">
-  <figcaption>The movement side before cleaning, with excess oil clearly visible on the barrel</figcaption>
-</figure>
-
 ## Service / Repair
 
 Well, since not much was to be repaired after all, I prepared the cleaning solutions and put part group by part group in it - still being quite paranoid I would lose or mix up screws of the different bridges. While the parts were soaking in the solvents, I turned to the crystal. I used sandpaper sticks from Amazon (grit 800 -8000 and polywatch) to first remove all the scratches with a low grit, and then move up towards higher and higher numbers, always 90° compared to the last round until the previous round's (micro-)scratches disappeared. A final round of polywatch left a nearly perfect crystal. Quite astonishing how easy that was and how good it looks. 
+
+<div class="photo-pair">
+  <figure>
+    <img src="/assets/img/posts/excel-geneve-draken/barrel.jpeg" alt="The movement side in a holder before cleaning, with old oil smeared over the barrel and gear train">
+    <figcaption>The movement side before cleaning, with excess oil clearly visible on the barrel</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/img/posts/excel-geneve-draken/crystal_polished.jpeg" alt="The Excel Geneve Draken 7000 without its strap after polishing: the crystal is clear again, showing the silver dial, the Draken 7000 lettering and the date window">
+    <figcaption>The crystal after polishing</figcaption>
+  </figure>
+</div>
 
 After the cleaned parts were reassembled, which to my own surprise went down without any major incidents, and the watch instantly started running, I immediately noticed a massive beat error: you could hear it galloping like a horse! That needed to be investigated. And this is where things went south, but also where I probably learned the most. 
 
